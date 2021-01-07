@@ -10,7 +10,7 @@ class Todo(models.Model):
     important = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    quantity = models.CharField(max_length=100)
+    quantity = models.CharField(max_length=100, blank=True)
     photo_main = models.ImageField(upload_to='photos/%Y/%m%d/', blank=True, null=True)
     need_by_date = models.CharField(max_length=100, blank=True, null=True)
 
