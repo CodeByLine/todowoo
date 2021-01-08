@@ -15,8 +15,9 @@
                 {% if todo.memo %}<em>{% endif %} {{ todo.memo }} {% if todo.memo %}</em>{% endif %} 
             {% endif %}
             </a>
-
-            &nbsp; &nbsp; &nbsp; &nbsp;Due on: {{todo.created}}
+            {% if todo.need_by_date %}
+            &nbsp; &nbsp; &nbsp; &nbsp; Need by: {{todo.need_by_date}}
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
