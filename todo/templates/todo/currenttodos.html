@@ -14,6 +14,8 @@
                 {% if todo.memo %}<em>{% endif %} {{ todo.memo }} {% if todo.memo %}</em>{% endif %} 
             {% endif %}
             </a>
+
+            &nbsp; &nbsp; &nbsp; &nbsp;Due on: {{todo.created}}
         </li>
         {% endfor %}
     </ul>
