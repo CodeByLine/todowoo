@@ -3,13 +3,23 @@
 
 {% block content %}
 
-<h1>Create Todo</h1>
+<h1>Create A New Todo</h1>
 <h2>{{ error }} </h2>
 <br><br>
+<div class="d-flex">
+ <div class="col-md-9">
 <form action="" method='POST'>
     {% csrf_token %}
 {{form.as_p}}
-<button type='submit'>Create</button>
+<button class="btn btn-primary" type='submit'>Add todo</button>
 </form>
+</div>
 
+<!-- <div class="col-md-3">
+    <a href="{% url 'createtodo' %}">Create</a>
+    <a href="{% url 'currenttodos' %}">Current</a>
+    <a href="{% url 'completed' %}">Completed</a>
+</div> -->
+
+</div>
 {% endblock %}
