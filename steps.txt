@@ -1,0 +1,8 @@
+This app is running on 
+    https://wooflake.pythonanywhere.com
+
+via GitHub
+
+1. from local Terminal, push updates to GitHub
+2. in pythonanywhere, open Consoles,
+3. git pull
